@@ -32,7 +32,7 @@ endfunction
 
 " source
 let s:source = {
-\ 'name': 'octopress_post',
+\ 'name': 'octopress/post',
 \ 'description': 'candidate from octopress posts',
 \}
 function! s:source.gather_candidates(args, context)
