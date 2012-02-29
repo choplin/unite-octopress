@@ -59,7 +59,7 @@ function! s:get_abbr(path)
   let fname = fnamemodify(a:path, ':p:t:r')
   let l = split(fname, '-')
   "/yyyy/mm/dd title
-  return '/'.l[0].'/'.l[1].'/'.l[2].' '.join(l[3:], '-')
+  return l[0].'/'.l[1].'/'.l[2].' '.join(l[3:], '-')
 endfunction
 
 call unite#define_source(s:source)
